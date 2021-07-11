@@ -13,6 +13,8 @@ function! PackInit() abort
   call minpac#add('glepnir/lspsaga.nvim')
   call minpac#add('nvim-treesitter/nvim-treesitter')
   call minpac#add('nvim-treesitter/nvim-treesitter-textobjects')
+  call minpac#add('luochen1990/rainbow')
+  call minpac#add('Olical/conjure', {'tag': 'v4.21.0'})
   call minpac#add('vimwiki/vimwiki')
   call minpac#add('editorconfig/editorconfig-vim')
   call minpac#add('bmartel/vim-snippets')
@@ -22,6 +24,7 @@ function! PackInit() abort
   call minpac#add('justinmk/vim-sneak')
 
   call minpac#add('bmartel/shades-of-purple.vim')
+  call minpac#add('haishanh/night-owl.vim')
   call minpac#add('glepnir/galaxyline.nvim' , {'branch': 'main'})
   call minpac#add('kyazdani42/nvim-web-devicons')
 endfunction
@@ -88,6 +91,9 @@ nnoremap <silent> ga    <cmd>Lspsaga code_action<CR>
 xnoremap <silent> ga    <cmd>Lspsaga range_code_action<CR>
 nnoremap <silent> gs    <cmd>Lspsaga signature_help<CR>
 
+"" Rainbow parens
+let g:rainbow_active = 1
+
 "" NetRW file list styles
 let g:netrw_banner = 0
 let g:netrw_liststyle = 1
@@ -138,6 +144,10 @@ nnoremap <silent> <leader>i gg=G``<cr>|          " fix indentation
 nnoremap <leader>rt :retab<cr>|                   " convert tabs to spaces
 nnoremap <silent> <leader>ts :%s/\s\+$//e<cr>|    " trim whitespace
 nnoremap <leader>tw :set wrap! wrap?<cr>|         " toggle wrapping
+
+"" Clojure Repl
+nmap <A-e> :ConjureEval<CR>
+vmap <A-e> :ConjureEval<CR>
 
 "" Vim Wiki
 nmap <leader>vw <Plug>VimwikiIndex
