@@ -1,6 +1,8 @@
 # nvim-config
 Current neovim config
 
+![image](https://user-images.githubusercontent.com/2242258/125203594-a3452700-e23e-11eb-9993-7fdc68cfaf51.png)
+
 ## Install
 
 Clone the directory to the nvim config path (back up any existing files first)
