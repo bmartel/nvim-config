@@ -29,7 +29,6 @@ endfunction
 command! PackUpdate call PackInit() | call minpac#update('', {'do': 'call minpac#status()'})
 command! PackClean  call PackInit() | call minpac#clean()
 command! PackStatus call PackInit() | call minpac#status()
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " === /Plugins
 
 " === Base Config
@@ -72,21 +71,6 @@ hi VertSplit ctermbg=NONE guibg=NONE
 autocmd BufNewFile,BufRead *.tsx set filetype=typescript.jsx
 autocmd BufNewFile,BufRead *.rs call RemapFormatRust()
 autocmd TermOpen * setlocal nonumber norelativenumber
-
-"" COC plugins
-let g:coc_global_extensions = [
-  \ 'coc-css',
-  \ 'coc-emmet',
-  \ 'coc-highlight',
-  \ 'coc-html',
-  \ 'coc-json',
-  \ 'coc-snippets',
-  \ 'coc-graphql',
-  \ 'coc-prisma',
-  \ 'coc-eslint',
-  \ 'coc-prettier',
-  \ 'coc-tsserver'
-\ ]
 
 " >> Lsp key bindings
 nnoremap <silent> gd    <cmd>lua vim.lsp.buf.definition()<CR>
