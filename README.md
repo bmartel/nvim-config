@@ -5,7 +5,7 @@ Current neovim config
 
 Clone the directory to the nvim config path (back up any existing files first)
 ```bash
-git clone git@github.com:bmartel/nvim-config.git ~/.config/nvim
+git clone https://github.com/bmartel/nvim-config.git ~/.config/nvim
 ```
 
 Run the language server dependencies setup
