@@ -1,0 +1,17 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "css",
+    "graphql",
+    "json",
+    "html"
+  ],
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "javascript",
+    "javascript": "javascript",
+    "typescript": "typescript"
+  }
+}
