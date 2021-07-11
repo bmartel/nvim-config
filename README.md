@@ -1,7 +1,7 @@
 # nvim-config
 Current neovim config
 
-![image](https://user-images.githubusercontent.com/2242258/125203594-a3452700-e23e-11eb-9993-7fdc68cfaf51.png)
+![image](https://user-images.githubusercontent.com/2242258/125203683-12228000-e23f-11eb-84eb-e3509c9b30a7.png)
 
 ## Install
 
